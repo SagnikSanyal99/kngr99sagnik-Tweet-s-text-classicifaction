@@ -1,0 +1,9 @@
+Data Preprocessing: We'll begin by cleaning the text data in the "text" column. This involves removing hashtags, URLs, special characters, and lowercasing everything. Additionally, n-gram generation can be applied here. N-grams are sequences of n words that capture recurring phrases in the tweets. By creating uni-grams (single words), bi-grams (two word phrases), and potentially tri-grams (three word phrases), we can account for sentiment expressed in short-hand or through specific word combinations.
+
+TensorFlow Integration: TensorFlow serves as the framework for building and training our sentiment analysis model. We can utilize techniques like tokenization to convert the text data (including n-grams) into numerical representations suitable for machine learning. Embedding layers can further enhance this process by capturing semantic relationships between words.
+
+Model Building: A common approach for sentiment analysis with TensorFlow involves building a Recurrent Neural Network (RNN) like Long Short-Term Memory (LSTM). LSTMs excel at handling sequential data like text, allowing them to learn sentiment from the order and context of words within tweets, including the captured n-gram information.
+
+Sentiment Classification: The trained LSTM model will then analyze new tweets and predict their sentiment as positive, negative, or neutral. This prediction is based on the patterns it learned from the labeled sentiment data in the training set.
+
+By combining n-gram extraction with the power of TensorFlow and LSTMs, we can achieve a robust sentiment analysis model that effectively captures the emotions expressed within the #TheSocialDilemma tweets.
